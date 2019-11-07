@@ -1,0 +1,102 @@
+%TextReset {
+  text-align: right;
+  margin: 12px 0;
+}
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 3px;
+  padding: 5px;
+  border-radius: 6px;
+  padding: 1rem;
+
+  &:hover {
+    background-color: #191d25;
+    cursor: pointer;
+  }
+}
+
+.rootSelected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 3px;
+  padding: 5px;
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: #132d63;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.textContainer {
+  padding: 0 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.tag {
+  color: gray;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.balance {
+  @extend %TextReset;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 16px;
+  margin: 0;
+  @extend %TextReset;
+}
+
+.nameWrapper {
+  margin-left: 8px;
+}
+
+.actions {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-top: 1px solid #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  border: none;
+  color: #00ff00;
+  font-size: 1rem;
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

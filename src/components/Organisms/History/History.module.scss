@@ -1,0 +1,17 @@
+.root {
+  padding: 8px;
+}
+
+.table {
+  width: 100%;
+}
+
+.tr {
+  &:hover {
+    background-color: #132d63;
+  }
+}
+.td {
+  padding: 24px 0;
+  text-align: center;
+}
